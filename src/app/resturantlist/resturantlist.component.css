@@ -1,0 +1,39 @@
+.main{
+    
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.upper{
+    display: flex;
+    
+}
+.item1{
+    display: flex;
+}
+.item2{
+    display: flex;
+    margin-left:1%;
+    
+}
+.item2left{
+    flex-basis: 80%;
+}
+.item2right{
+    flex-basis: 20%;
+}
+.rating{
+    background-color: green;
+}
+.name{
+    color: red;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+}
+
+.sampleimg{
+    width: 150px;
+    height: 150px;
+}

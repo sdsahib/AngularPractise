@@ -1,0 +1,33 @@
+<div class="fileUpload">
+
+    <p> Upload Restaurant Details CSV</p>
+    <div *ngIf="currentFileUpload" class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+            attr.aria-valuenow="{{progress.percentage}}" aria-valuemin="0" aria-valuemax="100"
+            [ngStyle]="{width:progress.percentage+'%'}">
+            {{progress.percentage}}%</div>
+    </div>
+    <label class="btn btn-default">
+        <input type="file" (change)="selectFile($event)">
+    </label>
+
+    <button class="btn btn-success" [disabled]="!selectedFiles" (click)="uploadRestaurantDetails()">Upload</button>
+
+</div>
+
+<div class="fileUpload">
+
+    <p> Upload Restaurant Address CSV</p>
+    <div *ngIf="currentFileUpload1" class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+            attr.aria-valuenow="{{progress1.percentage}}" aria-valuemin="0" aria-valuemax="100"
+            [ngStyle]="{width:progress.percentage+'%'}">
+            {{progress1.percentage}}%</div>
+    </div>
+    <label class="btn btn-default">
+        <input type="file" (change)="selectFile1($event)">
+    </label>
+
+    <button class="btn btn-success" [disabled]="!selectedFiles1" (click)="uploadRestaurantAddressDetails()">Upload</button>
+
+</div>

@@ -1,0 +1,22 @@
+<div>
+  <div class="sortBy">
+    <h3>Sort By</h3>
+    <mat-action-list>
+      <button mat-list-item (click)="sortBy('rating')"> Rating </button>
+      <button mat-list-item (click)="sortBy('votes')"> Votes </button>
+      <button mat-list-item (click)="sortBy('costtwo')"> Average Cost of Two</button>
+    </mat-action-list>
+  </div>
+  <!-- <div class="cuisineBy">
+    <h3>Cuisines By</h3>
+  </div> -->
+</div>
+
+<div class="sortBy">
+  <ul>
+    <li>
+      <a routerLink="uploadcsv" routerLinkActive="active">Upload CSV</a>
+    </li>
+  </ul>
+
+</div>

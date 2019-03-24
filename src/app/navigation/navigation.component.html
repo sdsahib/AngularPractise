@@ -1,0 +1,32 @@
+<div>
+  <mat-toolbar color="primary">
+
+    <div class="title">
+      <a routerLink="" routerLinkActive="active">Restaurants</a></div>
+    <div class="selectCity">
+      <mat-form-field>
+        <mat-label>Select City</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let city of cities" [value]="city">
+            {{city}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="searchInput">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Search For Restaurants or Cuisine" name="searchValue">
+      </mat-form-field>
+
+      <button mat-stroked-button color="accent">Search</button>
+    </div>
+  
+    <div class="Button">
+      <button mat-stroked-button color="accent">Login</button>
+      <button mat-stroked-button color="accent">Create Account</button>
+    </div>
+    
+
+
+  </mat-toolbar>
+</div>

@@ -1,0 +1,24 @@
+<div class="main" *ngFor="let model of resturantLists">
+  <div class="upper">
+    <div class="item1">
+      <img class="sampleimg" src="../../assets/sample.jpg">
+    </div>
+    <div class="item2">
+      <div class="item2left">
+        <h2 class="name">{{model.name}}</h2>
+        <p><b>{{model.city}}</b></p>
+        <p>{{model.address}}</p>
+      </div>
+      <div class="item2right">
+          <mat-chip-list>
+              <mat-chip class="rating">{{model.rating}}</mat-chip>
+            </mat-chip-list>
+        <p>votes: {{model.votes}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="lower">
+    <p>Cuisines: {{model.cuisine}}</p>
+    <p>Cost For Two: {{model.costForTwo}} {{model.currency}}</p>
+  </div>
+</div>

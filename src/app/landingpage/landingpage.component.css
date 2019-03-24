@@ -1,0 +1,11 @@
+.landingMain{
+    display: flex;
+
+}
+.sidenav{
+    flex-basis: 20%;
+}
+
+.resturantList{
+    flex-basis: 80%;
+}

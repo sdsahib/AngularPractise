@@ -1,0 +1,28 @@
+.mat-toolbar{
+    justify-content: space-between;
+}
+.title{
+    flex-basis: 10%;
+}
+.selectCity{
+    flex-basis: 15%;
+}
+
+.searchInput{
+    flex-basis: 55%;
+}
+
+.Button{
+    flex-basis: 15%;
+    margin: 1%;
+}
+
+.example-full-width {
+    width: 90%;
+    margin-right: 1%;
+  }
+
+a{
+    text-decoration: none;
+    color:white;
+}
